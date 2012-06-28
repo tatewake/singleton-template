@@ -27,10 +27,10 @@ namespace tjgrant
     public:
         singleton() { }
 
-        static T* instance()
+        static T* getInstance()
         {
-            static T myinstance;
-            return &myinstance;
+            static T _instance;
+            return &_instance;
         }
     };
 }
