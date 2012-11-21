@@ -1,3 +1,5 @@
+#pragma once
+
 /* Singleton Template (C++)
  The MIT License (MIT)
  Copyright (c) 2012 Terence J. Grant (tjgrant@tatewake.com)
