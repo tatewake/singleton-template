@@ -31,8 +31,8 @@ namespace tjgrant
 
         static T* getInstance()
         {
-            static T _instance;
-            return &_instance;
+            static T mInstance;
+            return &mInstance;
         }
     };
 }
