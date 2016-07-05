@@ -21,19 +21,16 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE. */
 
-namespace tjgrant
+template<typename T>
+class tSingleton
 {
-    template<typename T>
-    class singleton
-    {
-    public:
-        singleton() { }
+public:
+    tSingleton() { }
 
-        static T* getInstance()
-        {
-            static T mInstance;
-            return &mInstance;
-        }
-    };
-}
+    static T* getInstance()
+    {
+        static T mInstance;
+        return &mInstance;
+    }
+};
 
